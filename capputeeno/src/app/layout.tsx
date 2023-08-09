@@ -2,6 +2,7 @@ import { Header } from '@/components'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Saira } from 'next/font/google'
+import { FilterProvider } from '@/contexts'
 
 const saira = Saira({
   weight: ['300', '400', '500', '600'],
@@ -21,8 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={saira.className}>
-        <Header/>
-        {children}
+        <FilterProvider>
+          <Header/>
+          {children}
+        </FilterProvider>
       </body>
     </html>
   )

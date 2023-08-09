@@ -1,5 +1,12 @@
+import { FilterBar } from "@/components/FilterBar";
+import styles from './page.module.css';
+
 export default function Home() {
   return (
-    <div>Capputeeno</div>
+    <main className={styles.main}>
+      <FilterBar/>
+      Capputeeno
+
+    </main>
   )
 }
