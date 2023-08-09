@@ -35,6 +35,7 @@ const PriorityFilter = styled.ul`
     border-radius: 4px;
     list-style: none;
     padding: 12px 16px;
+    z-index: 999;
 
     top: 100%;
 

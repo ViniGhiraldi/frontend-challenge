@@ -22,7 +22,7 @@ export const FilterProvider = ({children}: IFilterProvider) => {
     const [search, setSearch] = useState('');
     const [page, setPage] = useState(0);
     const [type, setType] = useState(FilterType.ALL);
-    const [priority, setPriority] = useState(PriorityType.NEWS);
+    const [priority, setPriority] = useState(PriorityType.POPULARITY);
 
     return(
         <FilterContext.Provider value={{search, page, type, priority, setPriority, setSearch, setType, setPage}}>
